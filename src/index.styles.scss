@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Merriweather Sans";
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p,
+span,
+button {
+	font-family: "Montserrat";
+}
+
+.app {
+	width: 95%;
+	margin: 1rem auto;
+}
