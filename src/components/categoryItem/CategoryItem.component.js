@@ -1,14 +1,21 @@
 import React from "react";
-import { CategoryItemContainer } from "./categoryItem.styles";
+import {
+	CategoryItemContainer,
+	TitleItemContainer,
+	PriceContainer,
+} from "./categoryItem.styles";
+import CustomButton from "../customButton/CustomButton.component";
 
 const CategoryItem = ({ name, price, imgUrl }) => {
 	return (
 		<CategoryItemContainer>
-			<img src={imgUrl} alt="" />
+			<img src={imgUrl} alt="img1" />
 			<div className="desc">
-				<div>{name}</div>
-				<div>{price}</div>
+				<TitleItemContainer>{name}</TitleItemContainer>
+
+				<PriceContainer>$ {price}</PriceContainer>
 			</div>
+			<CustomButton>Add To Cart</CustomButton>
 		</CategoryItemContainer>
 	);
 };

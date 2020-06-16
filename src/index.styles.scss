@@ -1,8 +1,5 @@
-h1,
-h2,
-h3,
-h4 {
-	font-family: "Merriweather Sans";
+h1 {
+	font-family: "Lato";
 }
 
 * {
@@ -16,11 +13,10 @@ body {
 
 p,
 span,
-button {
+button,
+div {
 	font-family: "Montserrat";
 }
 
 .app {
-	width: 95%;
-	margin: 1rem auto;
 }

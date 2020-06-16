@@ -1,4 +1,4 @@
-export const DIRECTORIES = [
+export const directories = [
 	{
 		title: "Earphone",
 		imgUrl: "/assets/earphone.png",

@@ -7,7 +7,8 @@ import {
 	TitleContainer,
 	CategoriesContainer,
 } from "./directory.styles";
-import { DIRECTORIES as directories } from "../../data/directories";
+import { directories } from "../../data/directories";
+import CustomButton from "../customButton/CustomButton.component";
 
 import DirectoryCategory from "../directoryCategory/DirectoryCategory.component";
 
@@ -19,7 +20,7 @@ const Directory = (props) => {
 					<h3>Beats Solo</h3>
 					<h2>Wireless</h2>
 					<h1>HEADPHONE</h1>
-					<button>Shop by category</button>
+					<CustomButton width="25%">Shop by category</CustomButton>
 				</TitleContainer>
 				<DescriptionContainer>
 					<h2>Desc</h2>

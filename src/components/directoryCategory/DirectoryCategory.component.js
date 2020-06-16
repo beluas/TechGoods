@@ -1,6 +1,7 @@
 import React from "react";
 import { CategoryContainer, ImageContainer } from "./directoryCategory.styles";
 import { withRouter } from "react-router-dom";
+import CustomButton from "../customButton/CustomButton.component";
 
 //const getClassNameFromImgUrl = () => {};
 
@@ -10,9 +11,12 @@ const DirectoryCategory = ({ title, imgUrl, routeName, bgColor, history }) => {
 			<h3>Enjoy</h3>
 			<h2>With</h2>
 			<h1>{title}</h1>
-			<button onClick={() => history.push(`/${routeName}`)}>
+			<CustomButton
+				width="50%"
+				onClick={() => history.push(`/${routeName}`)}
+			>
 				Browse
-			</button>
+			</CustomButton>
 			<ImageContainer>
 				{" "}
 				<img src={imgUrl} className={imgUrl} alt="" />{" "}

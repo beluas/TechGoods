@@ -1,16 +1,34 @@
 import React from "react";
-import CategoryItem from "../categoryItem/CategoryItem.component";
-import { items } from "../../data/items";
-import { CategoryOverviewContainer } from "./categoryOverview.styles";
 
-const CategoryOverview = () => {
+import {
+	CategoryOverviewContainer,
+	HeaderSectionContainer,
+	NavContainer,
+} from "./categoryOverview.styles";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectCategories } from "../../redux/initialData/initialData.selectors";
+import CategoryPreview from "../categoryPreview/CategoryPreview.component";
+
+const CategoryOverview = ({ categories, history }) => {
 	return (
 		<CategoryOverviewContainer>
-			{items.map((item) => (
-				<CategoryItem key={item.name} {...item} />
+			<HeaderSectionContainer>
+				<NavContainer>
+					<span onClick={() => history.push("/")}>Home</span>
+					<span>Products</span>
+				</NavContainer>
+				<h1>Products</h1>
+			</HeaderSectionContainer>
+			{categories.map((item) => (
+				<CategoryPreview key={item.category} {...item} />
 			))}
 		</CategoryOverviewContainer>
 	);
 };
 
-export default CategoryOverview;
+const stateToProps = createStructuredSelector({
+	categories: selectCategories,
+});
+
+export default connect(stateToProps, null)(CategoryOverview);

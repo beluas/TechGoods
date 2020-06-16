@@ -71,18 +71,6 @@ export const TitleContainer = styled.div`
 		margin: 0;
 		padding: 0;
 	}
-
-	button {
-		display: block;
-		width: 230px;
-		padding: 0.8rem 1.8rem;
-		background-color: #f42c37;
-		border: none;
-		border-radius: 1.3rem;
-		color: white;
-		font-size: 18px;
-		font-weight: bold;
-	}
 `;
 
 export const CategoriesContainer = styled.div`
