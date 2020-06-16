@@ -1,4 +1,4 @@
-const items = {
+export const items = {
 	headphone: {
 		category: "headphone",
 		routeName: "/headphone",

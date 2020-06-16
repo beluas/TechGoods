@@ -2,7 +2,7 @@ import React from "react";
 import { CategoryContainer, ImageContainer } from "./directoryCategory.styles";
 import { withRouter } from "react-router-dom";
 
-const getClassNameFromImgUrl = () => {};
+//const getClassNameFromImgUrl = () => {};
 
 const DirectoryCategory = ({ title, imgUrl, routeName, bgColor, history }) => {
 	return (
