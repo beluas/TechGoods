@@ -1,9 +1,11 @@
 import React from "react";
 import { CustomButtonContainer } from "./customButton.styles";
 
-const CustomButton = ({ width, children }) => {
+const CustomButton = ({ width, children, onClick }) => {
 	return (
-		<CustomButtonContainer width={width}>{children}</CustomButtonContainer>
+		<CustomButtonContainer onClick={onClick} width={width}>
+			{children}
+		</CustomButtonContainer>
 	);
 };
 

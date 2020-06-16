@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const getWidth = (props) => {
-	console.log(props);
 	return { width: `${props.width}` };
 };
 

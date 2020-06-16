@@ -5,8 +5,10 @@ import {
 	PriceContainer,
 } from "./categoryItem.styles";
 import CustomButton from "../customButton/CustomButton.component";
+import { connect } from "react-redux";
+import { addItem } from "../../redux/cart/cart.actions";
 
-const CategoryItem = ({ name, price, imgUrl }) => {
+const CategoryItem = ({ name, price, imgUrl, addItem }) => {
 	return (
 		<CategoryItemContainer>
 			<img src={imgUrl} alt="img1" />
@@ -15,9 +17,15 @@ const CategoryItem = ({ name, price, imgUrl }) => {
 
 				<PriceContainer>$ {price}</PriceContainer>
 			</div>
-			<CustomButton>Add To Cart</CustomButton>
+			<CustomButton onClick={() => addItem({ name, price })}>
+				Add To Cart
+			</CustomButton>
 		</CategoryItemContainer>
 	);
 };
 
-export default CategoryItem;
+const dispatchToProps = (dispatch) => ({
+	addItem: (item) => dispatch(addItem(item)),
+});
+
+export default connect(null, dispatchToProps)(CategoryItem);
