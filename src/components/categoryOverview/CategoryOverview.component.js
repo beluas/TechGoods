@@ -7,8 +7,9 @@ import {
 } from "./categoryOverview.styles";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
-import { selectCategories } from "../../redux/initialData/initialData.selectors";
+import { selectItems } from "../../redux/initialData/initialData.selectors";
 import CategoryPreview from "../categoryPreview/CategoryPreview.component";
+import ShopSidebar from "../shopSidebar/ShopSidebar.component";
 
 const CategoryOverview = ({ categories, history }) => {
 	return (
@@ -20,15 +21,20 @@ const CategoryOverview = ({ categories, history }) => {
 				</NavContainer>
 				<h1>Products</h1>
 			</HeaderSectionContainer>
-			{categories.map((item) => (
-				<CategoryPreview key={item.category} {...item} />
-			))}
+			<div className="content">
+				<ShopSidebar />
+				<div className="categories">
+					{categories.map((item) => (
+						<CategoryPreview key={item.category} {...item} />
+					))}
+				</div>
+			</div>
 		</CategoryOverviewContainer>
 	);
 };
 
 const stateToProps = createStructuredSelector({
-	categories: selectCategories,
+	categories: selectItems,
 });
 
 export default connect(stateToProps, null)(CategoryOverview);

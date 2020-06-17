@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.ul`
 	display: flex;
-	list-style: none;
+
 	width: 90%;
 	padding: 2rem 0;
 	margin: 0 auto;
