@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroContainer = styled.div`
 	border-radius: 2rem;
-
+	width: 100%;
 	display: flex;
 	background-color: #eeeeee;
 
@@ -34,15 +34,13 @@ export const DescriptionContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-	width: 90%;
-	height: 100%;
 	position: absolute;
-	top: -5%;
-	left: 9%;
+	width: 400px;
+	top: 0%;
+	left: 40%;
 
 	img {
 		width: 100%;
-		height: 100%;
 	}
 `;
 
@@ -51,13 +49,16 @@ export const TitleContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 
-	h1 {
-		font-size: 170px;
-		font-weight: 800;
-		letter-spacing: -10px;
-		padding: 0;
-		color: white;
-		margin: 0;
+	.title {
+		width: 100%;
+		h1 {
+			font-size: 170px;
+			font-weight: 800;
+			letter-spacing: -10px;
+			padding: 0;
+			color: white;
+			margin: 0;
+		}
 	}
 
 	h2 {

@@ -10,7 +10,7 @@ import {
 import { directories } from "../../data/directories";
 import CustomButton from "../customButton/CustomButton.component";
 
-import DirectoryCategory from "../directoryCategory/DirectoryCategory.component";
+import DirectoryCategory from "../directoryItem/DirectoryItem.component";
 
 const Directory = (props) => {
 	return (
@@ -19,7 +19,9 @@ const Directory = (props) => {
 				<TitleContainer>
 					<h3>Beats Solo</h3>
 					<h2>Wireless</h2>
-					<h1>HEADPHONE</h1>
+					<div className="title">
+						<h1>HEADPHONE</h1>
+					</div>
 					<CustomButton width="25%">Shop by category</CustomButton>
 				</TitleContainer>
 				<DescriptionContainer>

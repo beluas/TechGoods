@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const CategoryItemContainer = styled.div`
 	margin: 1rem;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 
 	img {
 		width: 160px;

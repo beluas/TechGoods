@@ -1,5 +1,5 @@
 import React from "react";
-import { CategoryContainer, ImageContainer } from "./directoryCategory.styles";
+import { CategoryContainer, ImageContainer } from "./directoryItem.styles";
 import { withRouter } from "react-router-dom";
 import CustomButton from "../customButton/CustomButton.component";
 

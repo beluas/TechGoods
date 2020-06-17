@@ -4,7 +4,7 @@ const getWidth = (props) => {
 	return { width: `${props.width}` };
 };
 
-export const CustomButtonContainer = styled.div`
+export const CustomButtonContainer = styled.button`
 	display: flex;
 	${getWidth};
 	padding: 0.8em 1.8em;
@@ -12,6 +12,7 @@ export const CustomButtonContainer = styled.div`
 	border: none;
 	border-radius: 1.3em;
 	color: white;
+
 	font-size: 1em;
 	justify-content: center;
 	font-weight: bold;

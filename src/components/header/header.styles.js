@@ -7,8 +7,8 @@ export const HeaderContainer = styled.ul`
 	padding: 2rem 0;
 	margin: 0 auto;
 
-	paddingL li {
-		margin-left: 1rem;
+	li {
+		margin: 0 2rem;
 	}
 
 	.brand {

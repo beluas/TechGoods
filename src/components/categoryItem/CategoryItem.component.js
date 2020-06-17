@@ -17,7 +17,7 @@ const CategoryItem = ({ name, price, imgUrl, addItem }) => {
 
 				<PriceContainer>$ {price}</PriceContainer>
 			</div>
-			<CustomButton onClick={() => addItem({ name, price })}>
+			<CustomButton onClick={() => addItem({ name, price, imgUrl })}>
 				Add To Cart
 			</CustomButton>
 		</CategoryItemContainer>

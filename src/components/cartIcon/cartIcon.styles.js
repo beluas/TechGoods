@@ -16,5 +16,6 @@ export const CartIconContainer = styled.div`
 		border-radius: 50%;
 		font-size: 12px;
 		color: white;
+		cursor: pointer;
 	}
 `;
