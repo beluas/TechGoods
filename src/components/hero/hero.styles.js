@@ -5,6 +5,7 @@ export const HeroContainer = styled.div`
 	width: 100%;
 	display: flex;
 	background-color: #eeeeee;
+	margin-top: 80px;
 
 	position: relative;
 	padding: 9rem 5rem;

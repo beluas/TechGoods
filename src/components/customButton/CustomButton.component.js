@@ -1,9 +1,13 @@
 import React from "react";
 import { CustomButtonContainer } from "./customButton.styles";
 
-const CustomButton = ({ width, children, onClick }) => {
+const CustomButton = ({ width, children, onClick, inverted }) => {
 	return (
-		<CustomButtonContainer onClick={onClick} width={width}>
+		<CustomButtonContainer
+			inverted={inverted}
+			onClick={onClick}
+			width={width}
+		>
 			{children}
 		</CustomButtonContainer>
 	);

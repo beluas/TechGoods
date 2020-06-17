@@ -6,7 +6,8 @@ export const CartItemsContainer = styled.div`
 	position: relative;
 	left: -250px;
 	background: white;
-	border: 2px solid black;
+	box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.5);
+
 	overflow: auto;
 	padding: 1rem;
 

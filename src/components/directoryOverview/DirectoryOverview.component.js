@@ -1,5 +1,8 @@
 import React from "react";
-import { DirectoryContainer, CategoriesContainer } from "./directory.styles";
+import {
+	DirectoryContainer,
+	CategoriesContainer,
+} from "./directoryOverview.styles";
 import { directories } from "../../data/directories";
 import Hero from "../hero/Hero.component";
 

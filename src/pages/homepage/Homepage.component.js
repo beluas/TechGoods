@@ -1,11 +1,11 @@
 import React from "react";
 import { HomepageContainer } from "./homepage.styles";
-import Directory from "../../components/directory/Directory.component";
+import DirectoryOverview from "../../components/directoryOverview/DirectoryOverview.component";
 
 const Homepage = (props) => {
 	return (
 		<HomepageContainer>
-			<Directory />
+			<DirectoryOverview />
 		</HomepageContainer>
 	);
 };

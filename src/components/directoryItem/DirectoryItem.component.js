@@ -5,24 +5,37 @@ import CustomButton from "../customButton/CustomButton.component";
 
 //const getClassNameFromImgUrl = () => {};
 
-const DirectoryCategory = ({ title, imgUrl, routeName, bgColor, history }) => {
+const DirectoryItem = ({
+	title,
+	imgUrl,
+	routeName,
+	bgColor,
+	history,
+	subTitle,
+	subSubtitle,
+	inverted,
+}) => {
 	return (
 		<CategoryContainer bgColor={bgColor}>
-			<h3>Enjoy</h3>
-			<h2>With</h2>
-			<h1>{title}</h1>
-			<CustomButton
-				width="50%"
-				onClick={() => history.push(`/${routeName}`)}
-			>
-				Browse
-			</CustomButton>
-			<ImageContainer>
+			<ImageContainer className={title}>
 				{" "}
 				<img src={imgUrl} className={imgUrl} alt="" />{" "}
 			</ImageContainer>
+
+			<div className="desc">
+				<h3>Enjoy</h3>
+				<h2>With</h2>
+				<h1>{title}</h1>
+				<CustomButton
+					inverted={inverted}
+					width="120px"
+					onClick={() => history.push(`/${routeName}`)}
+				>
+					Browse
+				</CustomButton>
+			</div>
 		</CategoryContainer>
 	);
 };
 
-export default withRouter(DirectoryCategory);
+export default withRouter(DirectoryItem);

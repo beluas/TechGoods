@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CategoriesContainer = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 `;
 
 export const DirectoryContainer = styled.div``;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CartIconContainer = styled.div`
 	position: relative;
-
+	z-index: 999;
 	span {
 		position: absolute;
 		top: -10px;

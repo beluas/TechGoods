@@ -7,22 +7,24 @@ class Header extends Component {
 	render() {
 		return (
 			<HeaderContainer>
-				<li className="brand">
-					{" "}
-					<Link to="/"> BRAND </Link>{" "}
-				</li>
-				<li>
-					<Link to="/"> Home </Link>
-				</li>
-				<li>
-					<Link to="/shop"> Shop </Link>
-				</li>
-				<li>
-					<Link to="/shop"> About Us </Link>
-				</li>
-				<li className="cart">
-					<Cart />
-				</li>
+				<ul>
+					<li className="brand">
+						{" "}
+						<Link to="/"> BRAND </Link>{" "}
+					</li>
+					<li>
+						<Link to="/"> Home </Link>
+					</li>
+					<li>
+						<Link to="/shop"> Shop </Link>
+					</li>
+					<li>
+						<Link to="/shop"> About Us </Link>
+					</li>
+					<li className="cart">
+						<Cart />
+					</li>
+				</ul>
 			</HeaderContainer>
 		);
 	}
