@@ -6,10 +6,10 @@ export const HeaderContainer = styled.ul`
 	left: 0;
 	width: 100%;
 	margin: 0 auto;
-	z-index: 888;
+	z-index: 999;
 	background: rgba(255, 255, 255, 0.9);
 
-	box-shadow: 0px 1px 5px 2px rgba(244, 60, 55, 0.5);
+	box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.5);
 
 	ul {
 		display: flex;

@@ -22,18 +22,18 @@ export const TitleContainer = styled.div`
 		padding: 2rem;
 		width: fit-content;
 		border: solid black 2px;
-		z-index: 999;
+		z-index: 111;
 		position: relative;
 		background-color: white;
 	}
 
 	div {
 		min-height: 5px;
-		width: 30%;
+		width: 40%;
 		z-index: 0;
 		position: absolute;
 		top: 50%;
-		left: 35%;
+		left: 30%;
 		background-color: black;
 	}
 `;

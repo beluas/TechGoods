@@ -23,8 +23,8 @@ const DirectoryItem = ({
 			</ImageContainer>
 
 			<div className="desc">
-				<h3>Enjoy</h3>
-				<h2>With</h2>
+				<h3>{subSubtitle}</h3>
+				<h2>{subTitle}</h2>
 				<h1>{title}</h1>
 				<CustomButton
 					inverted={inverted}
