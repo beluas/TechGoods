@@ -1,10 +1,18 @@
 import styled from "styled-components";
 
 export const ShopSidebarContainer = styled.div`
-	padding: 1rem;
-	margin-top: 5rem;
+	flex-basis: 27%;
+
 	h3 {
+		font-family: poppins;
+		font-weight: 400;
 		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 21px;
+		i {
+		}
 	}
 
 	.categories-content {

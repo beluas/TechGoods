@@ -4,6 +4,7 @@ import { createStructuredSelector } from "reselect";
 import { selectItems, selectTotPrice } from "../../redux/cart/cart.selectors";
 import { CartItemsContainer, EmptyMessageContainer } from "./cartItems.styles";
 import CartItem from "../cartItem/CartItem.component";
+import { Link } from "react-router-dom";
 
 const CartItems = ({ items, totPrice }) => {
 	return (
@@ -20,6 +21,8 @@ const CartItems = ({ items, totPrice }) => {
 					<p>Cart is Empty</p>{" "}
 				</EmptyMessageContainer>
 			)}
+
+			<Link to="/checkout">Checkout</Link>
 		</CartItemsContainer>
 	);
 };

@@ -5,17 +5,17 @@ export const items = {
 		items: [
 			{
 				name: "Beats Blue",
-				price: "2550.80",
+				price: 421.8,
 				imgUrl: "/assets/shopItems/headphone1.png",
 			},
 			{
 				name: "Beats Red",
-				price: "5212.90",
+				price: 239.9,
 				imgUrl: "/assets/shopItems/headphone2.png",
 			},
 			{
 				name: "QFX Pink",
-				price: "1245.50",
+				price: 50.5,
 				imgUrl: "/assets/shopItems/headphone3.png",
 			},
 		],
@@ -26,17 +26,17 @@ export const items = {
 		items: [
 			{
 				name: "Sony Blue",
-				price: "5042.20",
+				price: 68.2,
 				imgUrl: "/assets/shopItems/earphone1.png",
 			},
 			{
 				name: "Panasonic Black",
-				price: "1240.10",
+				price: 52.1,
 				imgUrl: "/assets/shopItems/earphone2.png",
 			},
 			{
 				name: "Philips Classic",
-				price: "2341.50",
+				price: 24.5,
 				imgUrl: "/assets/shopItems/earphone3.png",
 			},
 		],
@@ -47,17 +47,17 @@ export const items = {
 		items: [
 			{
 				name: "SmartWatch",
-				price: "1234.12",
+				price: 560.12,
 				imgUrl: "/assets/shopItems/gadget1.png",
 			},
 			{
 				name: "Apple Watch",
-				price: "8541.14",
+				price: 450.9,
 				imgUrl: "/assets/shopItems/gadget2.png",
 			},
 			{
 				name: "Huawei Watch",
-				price: "3652.78",
+				price: 320.99,
 				imgUrl: "/assets/shopItems/gadget3.png",
 			},
 		],
@@ -68,17 +68,17 @@ export const items = {
 		items: [
 			{
 				name: "laptop1",
-				price: "50",
+				price: "750.50",
 				imgUrl: "/assets/shopItems/laptop1.png",
 			},
 			{
 				name: "laptop2",
-				price: "50",
+				price: "1550.99",
 				imgUrl: "/assets/shopItems/laptop2.png",
 			},
 			{
 				name: "laptop3",
-				price: "50",
+				price: "1250.99",
 				imgUrl: "/assets/shopItems/laptop3.png",
 			},
 		],
@@ -89,17 +89,17 @@ export const items = {
 		items: [
 			{
 				name: "console1",
-				price: "50",
+				price: "450.50",
 				imgUrl: "/assets/shopItems/console1.png",
 			},
 			{
 				name: "console2",
-				price: "50",
+				price: "250.69",
 				imgUrl: "/assets/shopItems/console2.png",
 			},
 			{
 				name: "console3",
-				price: "50",
+				price: "350.24",
 				imgUrl: "/assets/shopItems/console3.png",
 			},
 		],
@@ -110,17 +110,17 @@ export const items = {
 		items: [
 			{
 				name: "oculus1",
-				price: "50",
+				price: "678.50",
 				imgUrl: "/assets/shopItems/vr1.png",
 			},
 			{
 				name: "oculus2",
-				price: "50",
+				price: "5254.90",
 				imgUrl: "/assets/shopItems/vr1.png",
 			},
 			{
 				name: "oculus3",
-				price: "50",
+				price: "165.50",
 				imgUrl: "/assets/shopItems/vr1.png",
 			},
 		],

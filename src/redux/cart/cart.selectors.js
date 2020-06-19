@@ -14,7 +14,6 @@ export const selectTotItems = createSelector(
 	(cart) => cart.totItems
 );
 
-export const selectTotPrice = createSelector(
-	[selectCart],
-	(cart) => cart.totPrice
+export const selectTotPrice = createSelector([selectCart], (cart) =>
+	cart.totPrice.toFixed(2)
 );

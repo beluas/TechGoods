@@ -10,17 +10,24 @@ import { addItem } from "../../redux/cart/cart.actions";
 
 const CategoryItem = ({ name, price, imgUrl, addItem }) => {
 	return (
-		<CategoryItemContainer>
-			<img src={imgUrl} alt="img1" />
-			<div className="desc">
-				<TitleItemContainer>{name}</TitleItemContainer>
+		<>
+			<CategoryItemContainer>
+				<div className="img-container">
+					<img src={imgUrl} alt="img1" />
+				</div>
+				<div className="desc">
+					<TitleItemContainer>{name}</TitleItemContainer>
 
-				<PriceContainer>$ {price}</PriceContainer>
-			</div>
-			<CustomButton onClick={() => addItem({ name, price, imgUrl })}>
-				Add To Cart
-			</CustomButton>
-		</CategoryItemContainer>
+					<PriceContainer>$ {price}</PriceContainer>
+				</div>
+				<CustomButton
+					isShopButton
+					onClick={() => addItem({ name, price, imgUrl })}
+				>
+					Add To Cart
+				</CustomButton>
+			</CategoryItemContainer>
+		</>
 	);
 };
 

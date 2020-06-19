@@ -14,13 +14,16 @@ const Breadcrumb = ({ links, history, title }) => {
 					Home
 				</span>
 				{links.map((link) => (
-					<span onClick={() => history.push(`/${link.routeName}`)}>
+					<span
+						key={link.routeName}
+						onClick={() => history.push(`/${link.routeName}`)}
+					>
 						{link.label}
 					</span>
 				))}
 			</div>
 
-			<h1>{title}</h1>
+			<h1>{title.toUpperCase()}</h1>
 		</BreadCrumbContainer>
 	);
 };

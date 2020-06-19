@@ -9,11 +9,12 @@ export const BreadCrumbContainer = styled.div`
 	background-color: #eeeeee;
 
 	h1 {
-		font-size: 54px;
+		font-size: 40px;
+		font-weight: 900;
 	}
 	.links {
 		display: flex;
-		width: 30%;
+		width: 20%;
 		justify-content: space-around;
 
 		span {

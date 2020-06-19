@@ -23,14 +23,14 @@ const ShopSidebar = ({
 		<ShopSidebarContainer>
 			<input type="text" placeholder="search Item" />
 
-			<div className="categories">
+			<div className="categories-sidebar">
 				<h3 onClick={() => showCategoriesToggle()}>
 					{" "}
 					Product categories{" "}
 					{showCategories ? (
-						<span>&#9655;</span>
+						<i className="fas fa-angle-down"></i>
 					) : (
-						<span>&#9661;</span>
+						<i className="fas fa-angle-right"></i>
 					)}
 				</h3>
 				<ul>
@@ -58,8 +58,12 @@ const ShopSidebar = ({
 
 			<div className="prices">
 				<h3 onClick={() => showPricesToggle()}>
-					Choose Price{" "}
-					{showPrices ? <span>&#9655;</span> : <span>&#9661;</span>}
+					Choose Price
+					{showPrices ? (
+						<i className="fas fa-angle-down"></i>
+					) : (
+						<i className="fas fa-angle-right"></i>
+					)}
 				</h3>
 
 				{showPrices ? (

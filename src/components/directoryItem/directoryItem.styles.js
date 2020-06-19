@@ -9,12 +9,13 @@ export const CategoryContainer = styled.div`
 	display:flex;
 	position: relative;
 	height: 350px;
-	flex-basis: 22%;
-	margin-left: 1rem;
+	width: calc(25% - 1rem);
+
+	margin-left: 0.6rem;
 
 	&:nth-child(3),
 	&:nth-child(4) {
-		flex-basis: 48%;
+		width: calc(50% - 0.6rem);
 	}
 
 	&:nth-child(1),
@@ -56,7 +57,7 @@ export const CategoryContainer = styled.div`
 
 		button {
 			position: relative;
-			z-index: 999;
+			z-index: 555;
 		}
 	}
 `;

@@ -3,7 +3,11 @@ import { createSelector } from "reselect";
 const selectInitialData = (state) => state.initialData;
 
 export const selectItems = createSelector([selectInitialData], (initialData) =>
-	Object.values(initialData.items)
+	Object.values(initialData.items).map((item) => Object.values(item.items))
+);
+
+export const selectItemsForShopPage = createSelector([selectItems], (items) =>
+	items.reduce((accumulator, item) => accumulator.concat(item))
 );
 
 export const selectCategories = createSelector(

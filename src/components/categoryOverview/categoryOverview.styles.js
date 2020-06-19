@@ -7,11 +7,22 @@ export const CategoryOverviewContainer = styled.div`
 	.content {
 		display: flex;
 		justify-content: space-between;
-		flex-basis: 20%;
+		padding: 4rem;
 	}
 
 	.categories {
-		flex-basis: 75%;
+		flex-basis: 68%;
+		display: flex;
+		flex-direction: column;
+		.items {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		img {
+			width: 60%;
+		}
 	}
 `;
 

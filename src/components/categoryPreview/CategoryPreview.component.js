@@ -10,8 +10,7 @@ const CategoryPreview = ({ items, category, routeName }) => {
 	return (
 		<CategoryPreviewContainer>
 			<TitleContainer>
-				<h2>{category.toUpperCase()}</h2>
-				<div />
+				<h2>Shop</h2>
 			</TitleContainer>
 
 			<ItemsContainer>

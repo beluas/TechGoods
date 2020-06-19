@@ -4,10 +4,15 @@ import { ShopContainer } from "./shop.styles";
 import CategoryOverview from "../../components/categoryOverview/CategoryOverview.component";
 
 const Shop = ({ match }) => {
+	console.log(match);
 	return (
 		<ShopContainer>
-			<Route exact path={`/shop`} component={CategoryOverview} />
-			<Route path={`${match.path}/:categoryName`} />
+			<Route
+				path={`/shop/:pageNumber`}
+				render={() => (
+					<CategoryOverview pageNumber={match.params.pageNumber} />
+				)}
+			/>
 		</ShopContainer>
 	);
 };

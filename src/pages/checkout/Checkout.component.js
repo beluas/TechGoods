@@ -1,6 +1,7 @@
 import React from "react";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb.component";
-import { CheckoutContainer } from "./checkout.styles";
+import { CheckoutContainer, BodyCheckoutContainer } from "./checkout.styles";
+import CheckoutItems from "../../components/checkoutItems/CheckoutItems.component";
 
 const Checkout = () => {
 	return (
@@ -9,7 +10,10 @@ const Checkout = () => {
 				links={[{ label: "Checkout", routeName: "checkout" }]}
 				title={"Checkout"}
 			/>
-			<h2>Shopping Cart</h2>
+			<BodyCheckoutContainer>
+				<h2>Shopping Cart</h2>
+				<CheckoutItems />
+			</BodyCheckoutContainer>
 		</CheckoutContainer>
 	);
 };

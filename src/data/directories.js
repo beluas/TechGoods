@@ -18,14 +18,16 @@ export const directories = [
 
 	{
 		title: "Console",
-		subTitle: "Devices",
-		subSubtitle: "trend",
+		subTitle: "Gaming",
+		subSubtitle: "Best",
 		imgUrl: "/assets/console.png",
 		routeName: "shop/consoles",
 		bgColor: "#EDECEE",
 	},
 	{
 		title: "Laptop",
+		subTitle: "Devices",
+		subSubtitle: "Trend",
 		imgUrl: "/assets/laptop.png",
 		routeName: "shop/laptops",
 		bgColor: "#F42C37",
@@ -33,12 +35,16 @@ export const directories = [
 	},
 	{
 		title: "Oculus",
+		subTitle: "Game",
+		subSubtitle: "Play",
 		imgUrl: "/assets/oculus.png",
 		routeName: "shop/oculus",
 		bgColor: "#2ED070",
 	},
 	{
 		title: "Speaker",
+		subTitle: "Amazon",
+		subSubtitle: "New",
 		imgUrl: "/assets/speaker.png",
 		routeName: "shop/speakers",
 		bgColor: "#157AFF",

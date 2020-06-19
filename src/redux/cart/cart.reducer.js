@@ -1,5 +1,5 @@
-import { ADD_ITEM, SHOW_CART } from "./cart.types";
-import { addItem } from "../../utils/cart";
+import { ADD_ITEM, SHOW_CART, REMOVE_ITEM, CLEAR_ITEM } from "./cart.types";
+import { addItem, removeItem, clearItem } from "../../utils/cart";
 
 const INITIAL_STATE = {
 	totItems: 0,
@@ -21,6 +21,20 @@ const cartReducer = (state = INITIAL_STATE, { type, payload }) => {
 			return {
 				...state,
 				showCart: !state.showCart,
+			};
+		case REMOVE_ITEM:
+			return {
+				...state,
+				items: removeItem(state.items, payload),
+				totPrice: state.totPrice - payload.price,
+				totItems: state.totItems - 1,
+			};
+		case CLEAR_ITEM:
+			return {
+				...state,
+				items: clearItem(state.items, payload),
+				totPrice: state.totPrice - payload.price * payload.quantity,
+				totItems: state.totItems - payload.quantity,
 			};
 
 		default:

@@ -3,12 +3,35 @@ import React from "react";
 import { CategoryOverviewContainer } from "./categoryOverview.styles";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
-import { selectItems } from "../../redux/initialData/initialData.selectors";
-import CategoryPreview from "../categoryPreview/CategoryPreview.component";
+import { selectItemsForShopPage } from "../../redux/initialData/initialData.selectors";
+
 import ShopSidebar from "../shopSidebar/ShopSidebar.component";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb.component";
+import CategoryItem from "../categoryItem/CategoryItem.component";
+import Pagination from "react-router-pagination";
 
-const CategoryOverview = ({ items }) => {
+const CategoryOverview = ({ items, pageNumber }) => {
+	console.log(pageNumber);
+
+	// // Get current items
+	// console.log(items);
+
+	const indexOfLastItem = pageNumber * 10;
+	const indexOfFirstItem = indexOfLastItem - 10;
+	const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
+	// console.log(indexOfFirstItem, indexOfLastItem);
+	// // Change page
+	// const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+	const totalPages = Math.ceil(items.length / 10);
+
+	const match = {
+		path: "/shop/:pageNumber",
+		params: {
+			pageNumber: pageNumber,
+		},
+	};
+
 	return (
 		<CategoryOverviewContainer>
 			<Breadcrumb
@@ -19,9 +42,17 @@ const CategoryOverview = ({ items }) => {
 			<div className="content">
 				<ShopSidebar />
 				<div className="categories">
-					{items.map((item) => (
-						<CategoryPreview key={item.category} {...item} />
-					))}
+					<div className="items">
+						{currentItems.map((item) => (
+							<CategoryItem key={item.name} {...item} />
+						))}
+					</div>
+					<Pagination
+						spread={3}
+						match={match}
+						totalPages={totalPages}
+						pageNumber={pageNumber}
+					/>
 				</div>
 			</div>
 		</CategoryOverviewContainer>
@@ -29,7 +60,7 @@ const CategoryOverview = ({ items }) => {
 };
 
 const stateToProps = createStructuredSelector({
-	items: selectItems,
+	items: selectItemsForShopPage,
 });
 
 export default connect(stateToProps, null)(CategoryOverview);
