@@ -63,7 +63,7 @@ const ShopSidebar = ({
 				<hr />
 			</div>
 
-			<div className="prices">
+			{/* <div className="prices">
 				<h3 onClick={() => showPricesToggle()}>
 					Choose Price
 					{showPrices ? (
@@ -83,7 +83,7 @@ const ShopSidebar = ({
 						<li>1050</li>
 					</ul>
 				) : null}
-			</div>
+			</div> */}
 		</ShopSidebarContainer>
 	);
 };
