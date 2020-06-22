@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/FullStack-TechGoods/static/css/main.8030f5c5.chunk.css",
+    "main.js": "/FullStack-TechGoods/static/js/main.725c207d.chunk.js",
+    "main.js.map": "/FullStack-TechGoods/static/js/main.725c207d.chunk.js.map",
+    "runtime-main.js": "/FullStack-TechGoods/static/js/runtime-main.fce9ddfb.js",
+    "runtime-main.js.map": "/FullStack-TechGoods/static/js/runtime-main.fce9ddfb.js.map",
+    "static/js/2.93836d97.chunk.js": "/FullStack-TechGoods/static/js/2.93836d97.chunk.js",
+    "static/js/2.93836d97.chunk.js.map": "/FullStack-TechGoods/static/js/2.93836d97.chunk.js.map",
+    "index.html": "/FullStack-TechGoods/index.html",
+    "precache-manifest.b132250ac1cf0474f286191d2dddf9a6.js": "/FullStack-TechGoods/precache-manifest.b132250ac1cf0474f286191d2dddf9a6.js",
+    "service-worker.js": "/FullStack-TechGoods/service-worker.js",
+    "static/css/main.8030f5c5.chunk.css.map": "/FullStack-TechGoods/static/css/main.8030f5c5.chunk.css.map",
+    "static/js/2.93836d97.chunk.js.LICENSE.txt": "/FullStack-TechGoods/static/js/2.93836d97.chunk.js.LICENSE.txt",
+    "static/media/cart.6243b827.svg": "/FullStack-TechGoods/static/media/cart.6243b827.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fce9ddfb.js",
+    "static/js/2.93836d97.chunk.js",
+    "static/css/main.8030f5c5.chunk.css",
+    "static/js/main.725c207d.chunk.js"
+  ]
+}
