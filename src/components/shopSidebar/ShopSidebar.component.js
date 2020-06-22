@@ -11,6 +11,7 @@ import {
 	showCategoriesToggle,
 	showPricesToggle,
 } from "../../redux/initialData/initialData.actions";
+import { withRouter } from "react-router-dom";
 
 const ShopSidebar = ({
 	categories,
@@ -18,6 +19,7 @@ const ShopSidebar = ({
 	showCategories,
 	showPrices,
 	showPricesToggle,
+	history,
 }) => {
 	return (
 		<ShopSidebarContainer>
@@ -34,17 +36,15 @@ const ShopSidebar = ({
 					)}
 				</h3>
 				<ul>
-					<div
-						// className={`${
-						// 	showCategories
-						// 		? "categories-content-active"
-						// 		: "categories-content-disabled"
-						// }`}
-						className="categories-content"
-					>
+					<div className="categories-content">
 						{showCategories
 							? categories.map((category) => (
-									<li key={category}>
+									<li
+										onClick={() =>
+											history.push(`/shop/${category}/1`)
+										}
+										key={category}
+									>
 										{category[0].toUpperCase() +
 											category.substring(1)}
 									</li>
@@ -92,4 +92,4 @@ const dispatchToProps = (dispatch) => ({
 	showPricesToggle: () => dispatch(showPricesToggle()),
 });
 
-export default connect(stateToProps, dispatchToProps)(ShopSidebar);
+export default withRouter(connect(stateToProps, dispatchToProps)(ShopSidebar));

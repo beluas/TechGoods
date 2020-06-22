@@ -14,6 +14,7 @@ export const CategoryOverviewContainer = styled.div`
 		flex-basis: 68%;
 		display: flex;
 		flex-direction: column;
+
 		.items {
 			display: flex;
 			flex-wrap: wrap;
@@ -22,6 +23,30 @@ export const CategoryOverviewContainer = styled.div`
 
 		img {
 			width: 60%;
+		}
+	}
+
+	.pagination {
+		display: flex;
+
+		li {
+			a {
+				border-radius: 0.5rem;
+				font-size: 20px;
+
+				padding: 0.5rem 0.9rem;
+				margin-right: 1rem;
+				font-weight: 900;
+				font-family: "Poppins";
+				transition: background-color 0.3s ease-in-out,
+					color 0.2s ease-in-out;
+			}
+
+			&.currentPage a,
+			&:hover a {
+				background-color: #dc2832;
+				color: white;
+			}
 		}
 	}
 `;

@@ -17,6 +17,7 @@ const getIsShopButtonStyles = ({ isShopButton }) => {
 		return {
 			position: "absolute",
 			opacity: 0,
+			top: "-10px",
 			fontSize: "14px",
 			padding: ".8em 1.2em",
 			transition: "opacity .5s ease-in-out",

@@ -7,6 +7,7 @@ export const CategoryItemContainer = styled.div`
 	align-items: center;
 	flex-direction: column;
 	width: 200px;
+	position: relative;
 
 	&:hover {
 		button {

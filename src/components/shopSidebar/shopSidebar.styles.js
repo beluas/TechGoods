@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ShopSidebarContainer = styled.div`
-	flex-basis: 27%;
+	flex-basis: 26%;
 
 	h3 {
 		font-family: poppins;
@@ -11,16 +11,19 @@ export const ShopSidebarContainer = styled.div`
 		align-items: center;
 		justify-content: space-between;
 		font-size: 21px;
+
 		i {
 		}
 	}
 
 	.categories-content {
 		width: 50%;
-		margin: 0 auto;
+		margin: 0 auto 1.5rem;
 
 		li {
-			line-height: 180%;
+			cursor: pointer;
+			font-size: 18px;
+			line-height: 200%;
 		}
 	}
 

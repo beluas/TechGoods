@@ -3,11 +3,23 @@ import { createSelector } from "reselect";
 const selectInitialData = (state) => state.initialData;
 
 export const selectItems = createSelector([selectInitialData], (initialData) =>
-	Object.values(initialData.items).map((item) => Object.values(item.items))
+	Object.values(initialData.items)
 );
 
-export const selectItemsForShopPage = createSelector([selectItems], (items) =>
-	items.reduce((accumulator, item) => accumulator.concat(item))
+export const selectItemsInSpecificCategory = createSelector(
+	[selectItems],
+	(items) => (categoryToShow) =>
+		categoryToShow !== "all"
+			? items.find((item) => item.category === categoryToShow).items
+			: null
+);
+
+export const selectAllItemsForShopPage = createSelector(
+	[selectItems],
+	(items) =>
+		items
+			.map((item) => item.items)
+			.reduce((acc, item) => [...acc, ...item], [])
 );
 
 export const selectCategories = createSelector(

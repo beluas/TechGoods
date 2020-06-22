@@ -12,7 +12,10 @@ class App extends React.Component {
 				<Header />
 				<Switch>
 					<Route exact path="/" component={Homepage} />
-					<Route path="/shop/:pageNumber" component={Shop} />
+					<Route
+						path="/shop/:category/:pageNumber"
+						component={Shop}
+					/>
 					<Route path="/checkout" component={Checkout} />
 				</Switch>
 			</div>
