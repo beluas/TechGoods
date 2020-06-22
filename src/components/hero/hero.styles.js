@@ -8,6 +8,12 @@ export const HeroContainer = styled.div`
 
 	position: relative;
 	padding: 9rem 5rem;
+
+	@media (max-width: 620px) {
+		& {
+			padding: 5rem 3rem;
+		}
+	}
 `;
 
 export const DescriptionContainer = styled.div`
@@ -31,16 +37,68 @@ export const DescriptionContainer = styled.div`
 		font-size: 15px;
 		font-weight: 300;
 	}
+
+	@media (max-width: 1036px) {
+		& {
+			width: 35%;
+		}
+	}
+
+	@media (max-width: 670px) {
+		& {
+			width: 50%;
+			font-size: 13px;
+			bottom: 55px;
+			right: 40px;
+		}
+	}
 `;
 
 export const ImageContainer = styled.div`
 	position: absolute;
 	width: 400px;
-	top: 0%;
-	left: 40%;
+	top: 10%;
+	left: 35%;
 
 	img {
 		width: 100%;
+	}
+
+	@media (max-width: 1036px) {
+		& {
+			img {
+				width: 80%;
+			}
+		}
+	}
+
+	@media (max-width: 900px) {
+		& {
+			left: 45%;
+			img {
+				width: 70%;
+			}
+		}
+	}
+
+	@media (max-width: 790px) {
+		& {
+			top: 10%;
+			left: 50%;
+			img {
+				width: 50%;
+			}
+		}
+	}
+
+	@media (max-width: 570px) {
+		& {
+			top: 10%;
+			left: 50%;
+			img {
+				width: 40%;
+			}
+		}
 	}
 `;
 
@@ -52,7 +110,7 @@ export const TitleContainer = styled.div`
 	.title {
 		width: 100%;
 		h1 {
-			font-size: 170px;
+			font-size: 180px;
 			font-weight: 800;
 			letter-spacing: -10px;
 			padding: 0;
@@ -71,5 +129,124 @@ export const TitleContainer = styled.div`
 		font-size: 30px;
 		margin: 0;
 		padding: 0;
+	}
+
+	@media (max-width: 1250px) {
+		& {
+			.title {
+				h1 {
+					font-size: 150px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1036px) {
+		& {
+			.title {
+				h1 {
+					font-size: 115px;
+					letter-spacing: -5px;
+				}
+			}
+
+			button {
+				padding: 0.8rem;
+			}
+		}
+	}
+
+	@media (max-width: 898px) {
+		& {
+			/* p {
+				margin-top: 5px;
+				font-size: 15px;
+				font-weight: 300;
+			} */
+			.title {
+				h1 {
+					font-size: 95px;
+					letter-spacing: 2px;
+				}
+			}
+
+			button {
+				font-size: 13px;
+			}
+		}
+	}
+
+	@media (max-width: 790px) {
+		& {
+			.title {
+				h1 {
+					font-size: 80px;
+					letter-spacing: 4px;
+				}
+			}
+
+			button {
+				padding: 0.5rem;
+				font-size: 12px;
+			}
+
+			h2 {
+				margin: 0;
+				padding: 0;
+				font-size: 40px;
+			}
+
+			h3 {
+				font-size: 20px;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	@media (max-width: 700px) {
+		& {
+			.title {
+				h1 {
+					font-size: 60px;
+					letter-spacing: 4px;
+				}
+			}
+
+			h2 {
+				margin: 0;
+				padding: 0;
+				font-size: 40px;
+			}
+
+			h3 {
+				font-size: 20px;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	@media (max-width: 570px) {
+		& {
+			.title {
+				h1 {
+					font-size: 50px;
+					letter-spacing: 0px;
+				}
+			}
+
+			h2 {
+				margin: 0;
+				padding: 0;
+				font-size: 40px;
+			}
+
+			h3 {
+				font-size: 20px;
+				margin: 0;
+				padding: 0;
+			}
+		}
 	}
 `;

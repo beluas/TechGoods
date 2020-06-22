@@ -11,7 +11,6 @@ const Checkout = () => {
 				title={"Checkout"}
 			/>
 			<BodyCheckoutContainer>
-				<h2>Shopping Cart</h2>
 				<CheckoutItems />
 			</BodyCheckoutContainer>
 		</CheckoutContainer>

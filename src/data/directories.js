@@ -22,7 +22,7 @@ export const directories = [
 		subSubtitle: "Best",
 		imgUrl: "/assets/console.png",
 		routeName: "shop/consoles",
-		bgColor: "#EDECEE",
+		bgColor: "#D1D1D1",
 	},
 	{
 		title: "Laptop",

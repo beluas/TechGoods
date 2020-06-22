@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const CheckoutContainer = styled.div`
-	margin: 5rem auto 1rem;
+	margin: 3.9rem auto 1rem;
 `;
 
 export const BodyCheckoutContainer = styled.div`
-	padding: 3rem;
 	color: #393a41;
 	/* background-color: rgb(246, 246, 246); */
 

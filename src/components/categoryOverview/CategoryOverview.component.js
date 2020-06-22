@@ -2,11 +2,9 @@ import React from "react";
 
 import { CategoryOverviewContainer } from "./categoryOverview.styles";
 import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
 import {
 	selectAllItemsInOneArray,
 	selectItemsInSpecificCategory,
-	selectItems,
 } from "../../redux/initialData/initialData.selectors";
 
 import ShopSidebar from "../shopSidebar/ShopSidebar.component";

@@ -5,20 +5,24 @@ export const BreadCrumbContainer = styled.div`
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: column;
-	padding: 2rem 0;
-	background-color: #eeeeee;
+	padding: 4rem 0 2rem;
+	/* border-bottom: 3px solid #eeeeee; */
 
 	h1 {
 		font-size: 40px;
 		font-weight: 700;
+		margin-bottom: auto;
 	}
 	.links {
 		display: flex;
-		width: 20%;
+		width: 100%;
 		justify-content: space-around;
 
 		span {
+			padding: 1rem;
+			border: 2px solid #fb414c;
 			cursor: pointer;
+			font-weight: 900;
 		}
 	}
 `;

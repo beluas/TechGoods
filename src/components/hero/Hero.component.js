@@ -21,8 +21,7 @@ const Hero = () => {
 			<DescriptionContainer>
 				<h2>Desc</h2>
 				<p>
-					There are many variations passages of Lorem Ipsum available,
-					but the majority have suffered alteration
+					There are many variations passages of Lorem Ipsum available.
 				</p>
 			</DescriptionContainer>
 			<ImageContainer>

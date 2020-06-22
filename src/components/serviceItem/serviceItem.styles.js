@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ServiceItemContainer = styled.div`
 	display: flex;
-	margin: 4rem auto;
+	margin: 1rem auto;
 	.desc {
 		margin-left: 1rem;
 
@@ -11,6 +11,12 @@ export const ServiceItemContainer = styled.div`
 		}
 		p {
 			margin-top: 0.3rem;
+		}
+	}
+
+	@media (max-width: 400px) {
+		h3 {
+			font-size: 15px;
 		}
 	}
 `;

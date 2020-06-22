@@ -10,6 +10,7 @@ export const CategoryContainer = styled.div`
 	position: relative;
 	height: 350px;
 	width: calc(25% - 1rem);
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
 
 	margin-left: 0.6rem;
 
@@ -60,6 +61,25 @@ export const CategoryContainer = styled.div`
 			z-index: 555;
 		}
 	}
+
+	@media (max-width: 1250px) {
+		&,
+		&:nth-child(3),
+		&:nth-child(4) {
+			width: calc(48% - 0.6rem);
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	@media (max-width: 750px) {
+		&,
+		&:nth-child(3),
+		&:nth-child(4) {
+			width: 98%;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
 `;
 
 export const ImageContainer = styled.div`
@@ -76,10 +96,8 @@ export const ImageContainer = styled.div`
 	}
 
 	&.Gadgets {
-		top: 0;
-		right: 0;
-		width: 65%;
-		height: 60%;
+		top: 40px;
+		left: 60px;
 	}
 
 	&.Console {
@@ -99,12 +117,43 @@ export const ImageContainer = styled.div`
 
 	&.Oculus {
 		bottom: -4px;
-		right: -25px;
+		right: -10px;
 	}
 	&.Speaker {
 		top: 0px;
 		right: 0px;
-		width: 80%;
-		height: 60%;
+	}
+
+	@media (max-width: 1250px) {
+		&.Gadgets {
+			top: 40px;
+			left: 150px;
+			width: 75%;
+		}
+
+		&.Oculus {
+			bottom: -4px;
+			right: -30px;
+		}
+
+		&.Console {
+			top: 45px;
+			right: 20px;
+			width: 60%;
+		}
+
+		&.Laptop {
+			top: 0px;
+			right: 0px;
+			width: 65%;
+		}
+	}
+
+	@media (max-width: 1250px) {
+		& {
+			img {
+				width: 80%;
+			}
+		}
 	}
 `;
