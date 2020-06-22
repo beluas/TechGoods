@@ -16,7 +16,7 @@ const Hero = () => {
 				<div className="title">
 					<h1>HEADPHONE</h1>
 				</div>
-				<CustomButton width="25%">Shop by category</CustomButton>
+				<CustomButton width="25%">Shop</CustomButton>
 			</TitleContainer>
 			<DescriptionContainer>
 				<h2>Desc</h2>

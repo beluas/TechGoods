@@ -249,4 +249,13 @@ export const TitleContainer = styled.div`
 			}
 		}
 	}
+
+	@media (min-width: 1440px) {
+		.title {
+			h1 {
+				font-size: 210px;
+				letter-spacing: -5px;
+			}
+		}
+	}
 `;
