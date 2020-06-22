@@ -5,7 +5,10 @@ import { selectAllItemsInOneArray } from "../../redux/initialData/initialData.se
 import { SearchInputElementContainer } from "./searchInputElement.styles";
 import { handleSearchClick } from "../../utils/items";
 import { withRouter } from "react-router-dom";
-import { storeSearchedItems } from "../../redux/search/search.actions";
+import {
+	storeSearchedItems,
+	updateSearchTerm,
+} from "../../redux/search/search.actions";
 
 class SearchInputElement extends React.Component {
 	state = {
@@ -17,7 +20,12 @@ class SearchInputElement extends React.Component {
 	};
 
 	render() {
-		const { items, history, storeSearchedItems } = this.props;
+		const {
+			items,
+			history,
+			storeSearchedItems,
+			updateSearchTerm,
+		} = this.props;
 		const { searchTerm } = this.state;
 		return (
 			<SearchInputElementContainer>
@@ -38,7 +46,7 @@ class SearchInputElement extends React.Component {
 						);
 
 						storeSearchedItems(searchedItems);
-
+						updateSearchTerm(searchTerm);
 						history.push("/shop/results");
 					}}
 					className="fas fa-search"
@@ -54,6 +62,7 @@ const stateToProps = createStructuredSelector({
 
 const dispatchToProps = (dispatch) => ({
 	storeSearchedItems: (items) => dispatch(storeSearchedItems(items)),
+	updateSearchTerm: (searchTerm) => dispatch(updateSearchTerm(searchTerm)),
 });
 
 export default withRouter(

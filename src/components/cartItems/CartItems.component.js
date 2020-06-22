@@ -9,20 +9,23 @@ import { Link } from "react-router-dom";
 const CartItems = ({ items, totPrice }) => {
 	return (
 		<CartItemsContainer>
+			<Link className="checkout-btn" to="/checkout">
+				Go To Checkout
+			</Link>
 			{items.map((item) => (
 				<CartItem key={item.name} {...item} />
 			))}
 
 			{items.length ? (
-				<div className="price">Total : ${totPrice}</div>
+				<Link to="/checkout">
+					<div className="price">To Pay : ${totPrice}</div>
+				</Link>
 			) : (
 				<EmptyMessageContainer>
 					{" "}
 					<p>Cart is Empty</p>{" "}
 				</EmptyMessageContainer>
 			)}
-
-			<Link to="/checkout">Checkout</Link>
 		</CartItemsContainer>
 	);
 };

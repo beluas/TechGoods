@@ -19,7 +19,10 @@ class Header extends Component {
 						<Link to="/shop/all/1"> Shop </Link>
 					</li>
 					<li>
-						<Link to="/shop"> About Us </Link>
+						<a href="https://beluas.github.io/Projects">
+							{" "}
+							About Us{" "}
+						</a>
 					</li>
 					<li className="cart">
 						<Cart />

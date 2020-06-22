@@ -9,7 +9,7 @@ import { persistReducer } from "redux-persist";
 const persistConfig = {
 	key: "root",
 	storage,
-	whitelist: ["cart", "initialData"],
+	whitelist: ["cart", "initialData", "search"],
 };
 
 const rootReducer = combineReducers({

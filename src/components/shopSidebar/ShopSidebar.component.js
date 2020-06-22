@@ -11,7 +11,7 @@ import {
 	showCategoriesToggle,
 	showPricesToggle,
 } from "../../redux/initialData/initialData.actions";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import SearchInputElement from "../searchInputElement/SearchInputElement.component";
 
 const ShopSidebar = ({
@@ -51,6 +51,12 @@ const ShopSidebar = ({
 									</li>
 							  ))
 							: null}
+
+						{showCategories ? (
+							<li>
+								<Link to="/shop/all/1">All Products</Link>
+							</li>
+						) : null}
 					</div>
 				</ul>
 

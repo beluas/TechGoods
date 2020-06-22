@@ -29,9 +29,7 @@ const CategoryOverview = ({
 	if (category === "all") {
 		currentItems = allItems.slice(indexOfFirstItem, indexOfLastItem);
 		totalPages = Math.ceil(allItems.length / 10);
-		console.log(currentItems);
 	} else {
-		console.log(itemsInSpecificCategory);
 		currentItems = itemsInSpecificCategory.slice(
 			indexOfFirstItem,
 			indexOfLastItem

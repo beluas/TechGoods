@@ -4,5 +4,10 @@ const selectSearchItems = (state) => state.search;
 
 export const selectSearchedItem = createSelector(
 	[selectSearchItems],
-	(searchedItems) => searchedItems.items
+	(search) => search.items
+);
+
+export const selectSearchTerm = createSelector(
+	[selectSearchItems],
+	(search) => search.searchTerm
 );

@@ -1,7 +1,8 @@
-import { SEARCHED_ITEMS } from "./search.types";
+import { SEARCHED_ITEMS, UPDATE_SEARCH_TERM } from "./search.types";
 
 const INITIAL_STATE = {
 	items: [],
+	searchTerm: "",
 };
 
 const searchReducer = (state = INITIAL_STATE, { type, payload }) => {
@@ -9,7 +10,12 @@ const searchReducer = (state = INITIAL_STATE, { type, payload }) => {
 		case SEARCHED_ITEMS:
 			return {
 				...state,
-				items: [...state.items, ...payload],
+				items: [...payload],
+			};
+		case UPDATE_SEARCH_TERM:
+			return {
+				...state,
+				searchTerm: payload,
 			};
 
 		default:
