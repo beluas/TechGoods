@@ -28,11 +28,15 @@ const CategoryOverview = ({
 		currentItems = allItems.slice(indexOfFirstItem, indexOfLastItem);
 		totalPages = Math.ceil(allItems.length / 10);
 	} else {
-		currentItems = itemsInSpecificCategory.slice(
-			indexOfFirstItem,
-			indexOfLastItem
-		);
-		totalPages = Math.ceil(itemsInSpecificCategory.length / 10);
+		if (itemsInSpecificCategory) {
+			currentItems = itemsInSpecificCategory.slice(
+				indexOfFirstItem,
+				indexOfLastItem
+			);
+			totalPages = Math.ceil(itemsInSpecificCategory.length / 10);
+		} else {
+			console.log("wait");
+		}
 	}
 
 	const match = {
@@ -73,14 +77,17 @@ const CategoryOverview = ({
 	);
 };
 
-const stateToProps = (state, ownProps) => ({
-	allItems: selectAllItemsInOneArray(state),
-	itemsInSpecificCategory: selectItemsInSpecificCategory(state)(
-		ownProps.category
-	),
+const stateToProps = (state, ownProps) => {
+	console.log("props", ownProps);
+	return {
+		allItems: selectAllItemsInOneArray(state),
+		itemsInSpecificCategory: selectItemsInSpecificCategory(state)(
+			ownProps.category
+		),
+	};
 	//.filter(
 	// 	(item) => item.category === ownProps.category
 	// ),
-});
+};
 
 export default connect(stateToProps, null)(CategoryOverview);

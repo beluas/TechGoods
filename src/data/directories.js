@@ -4,7 +4,7 @@ export const directories = [
 		subTitle: "With",
 		subSubtitle: "Enjoy",
 		imgUrl: "/assets/earphone.png",
-		routeName: "shop/earphones/1",
+		routeName: "shop/all/1",
 		bgColor: "linear-gradient(135deg, #222222 0%,#3e3e3e 100%); ",
 	},
 	{
@@ -12,7 +12,7 @@ export const directories = [
 		subTitle: "Wear",
 		subSubtitle: "New",
 		imgUrl: "/assets/gadgets.png",
-		routeName: "shop/gadgets/1",
+		routeName: "shop/all/1",
 		bgColor: "#FEC62E",
 	},
 
@@ -21,7 +21,7 @@ export const directories = [
 		subTitle: "Gaming",
 		subSubtitle: "Best",
 		imgUrl: "/assets/console.png",
-		routeName: "shop/consoles/1",
+		routeName: "shop/all/1",
 		bgColor: "#D1D1D1",
 	},
 	{
@@ -29,7 +29,7 @@ export const directories = [
 		subTitle: "Devices",
 		subSubtitle: "Trend",
 		imgUrl: "/assets/laptop.png",
-		routeName: "shop/laptops/1",
+		routeName: "shop/all/1",
 		bgColor: "#F42C37",
 		inverted: true,
 	},
@@ -38,7 +38,7 @@ export const directories = [
 		subTitle: "Game",
 		subSubtitle: "Play",
 		imgUrl: "/assets/oculus.png",
-		routeName: "shop/oculus/1",
+		routeName: "shop/all/1",
 		bgColor: "#2ED070",
 	},
 	{
@@ -46,7 +46,7 @@ export const directories = [
 		subTitle: "Amazon",
 		subSubtitle: "New",
 		imgUrl: "/assets/speaker.png",
-		routeName: "shop/speakers/1",
+		routeName: "shop/all/1",
 		bgColor: "#157AFF",
 	},
 ];
