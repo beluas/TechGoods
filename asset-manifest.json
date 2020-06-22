@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/FullStack-TechGoods/static/css/main.8030f5c5.chunk.css",
-    "main.js": "/FullStack-TechGoods/static/js/main.a60a8dd4.chunk.js",
-    "main.js.map": "/FullStack-TechGoods/static/js/main.a60a8dd4.chunk.js.map",
-    "runtime-main.js": "/FullStack-TechGoods/static/js/runtime-main.fce9ddfb.js",
-    "runtime-main.js.map": "/FullStack-TechGoods/static/js/runtime-main.fce9ddfb.js.map",
-    "static/js/2.93836d97.chunk.js": "/FullStack-TechGoods/static/js/2.93836d97.chunk.js",
-    "static/js/2.93836d97.chunk.js.map": "/FullStack-TechGoods/static/js/2.93836d97.chunk.js.map",
-    "index.html": "/FullStack-TechGoods/index.html",
-    "precache-manifest.1be0fc8daf55db5a937cfd8232d67f55.js": "/FullStack-TechGoods/precache-manifest.1be0fc8daf55db5a937cfd8232d67f55.js",
-    "service-worker.js": "/FullStack-TechGoods/service-worker.js",
-    "static/css/main.8030f5c5.chunk.css.map": "/FullStack-TechGoods/static/css/main.8030f5c5.chunk.css.map",
-    "static/js/2.93836d97.chunk.js.LICENSE.txt": "/FullStack-TechGoods/static/js/2.93836d97.chunk.js.LICENSE.txt",
-    "static/media/cart.6243b827.svg": "/FullStack-TechGoods/static/media/cart.6243b827.svg"
+    "main.css": "/TechGoods/static/css/main.8030f5c5.chunk.css",
+    "main.js": "/TechGoods/static/js/main.6fedf8cb.chunk.js",
+    "main.js.map": "/TechGoods/static/js/main.6fedf8cb.chunk.js.map",
+    "runtime-main.js": "/TechGoods/static/js/runtime-main.510e9e2f.js",
+    "runtime-main.js.map": "/TechGoods/static/js/runtime-main.510e9e2f.js.map",
+    "static/js/2.ca8d876b.chunk.js": "/TechGoods/static/js/2.ca8d876b.chunk.js",
+    "static/js/2.ca8d876b.chunk.js.map": "/TechGoods/static/js/2.ca8d876b.chunk.js.map",
+    "index.html": "/TechGoods/index.html",
+    "precache-manifest.e2856d9b7768f8f19b7c1e34dcd4b304.js": "/TechGoods/precache-manifest.e2856d9b7768f8f19b7c1e34dcd4b304.js",
+    "service-worker.js": "/TechGoods/service-worker.js",
+    "static/css/main.8030f5c5.chunk.css.map": "/TechGoods/static/css/main.8030f5c5.chunk.css.map",
+    "static/js/2.ca8d876b.chunk.js.LICENSE.txt": "/TechGoods/static/js/2.ca8d876b.chunk.js.LICENSE.txt",
+    "static/media/cart.6243b827.svg": "/TechGoods/static/media/cart.6243b827.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fce9ddfb.js",
-    "static/js/2.93836d97.chunk.js",
+    "static/js/runtime-main.510e9e2f.js",
+    "static/js/2.ca8d876b.chunk.js",
     "static/css/main.8030f5c5.chunk.css",
-    "static/js/main.a60a8dd4.chunk.js"
+    "static/js/main.6fedf8cb.chunk.js"
   ]
 }
