@@ -12,23 +12,13 @@ class App extends React.Component {
 			<div className="app">
 				<Header />
 				<Switch>
+					<Route exact path="/" component={Homepage} />
 					<Route
-						exact
-						path="https://beluas.github.io/TechGoods/"
-						component={Homepage}
-					/>
-					<Route
-						path="https://beluas.github.io/TechGoods//shop/:category/:pageNumber"
+						path="/shop/:category/:pageNumber"
 						component={Shop}
 					/>
-					<Route
-						path="https://beluas.github.io/TechGoods//checkout"
-						component={Checkout}
-					/>
-					<Route
-						path="https://beluas.github.io/TechGoods//shop/results"
-						component={Results}
-					/>
+					<Route path="/checkout" component={Checkout} />
+					<Route path="/shop/results" component={Results} />
 				</Switch>
 			</div>
 		);
