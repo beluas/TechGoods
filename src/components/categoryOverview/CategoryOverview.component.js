@@ -4,7 +4,7 @@ import { CategoryOverviewContainer } from "./categoryOverview.styles";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import {
-	selectAllItemsForShopPage,
+	selectAllItemsInOneArray,
 	selectItemsInSpecificCategory,
 	selectItems,
 } from "../../redux/initialData/initialData.selectors";
@@ -21,14 +21,14 @@ const CategoryOverview = ({
 	itemsInSpecificCategory,
 }) => {
 	// use 10 and not 2  and move the indexes inside the if
-	const indexOfLastItem = pageNumber * 2;
-	const indexOfFirstItem = indexOfLastItem - 2;
+	const indexOfLastItem = pageNumber * 10;
+	const indexOfFirstItem = indexOfLastItem - 10;
 	let currentItems = [];
 
 	let totalPages = 0;
 	if (category === "all") {
 		currentItems = allItems.slice(indexOfFirstItem, indexOfLastItem);
-		totalPages = Math.ceil(allItems.length / 2);
+		totalPages = Math.ceil(allItems.length / 10);
 		console.log(currentItems);
 	} else {
 		console.log(itemsInSpecificCategory);
@@ -36,7 +36,7 @@ const CategoryOverview = ({
 			indexOfFirstItem,
 			indexOfLastItem
 		);
-		totalPages = Math.ceil(itemsInSpecificCategory.length / 2);
+		totalPages = Math.ceil(itemsInSpecificCategory.length / 10);
 	}
 
 	const match = {
@@ -78,7 +78,7 @@ const CategoryOverview = ({
 };
 
 const stateToProps = (state, ownProps) => ({
-	allItems: selectAllItemsForShopPage(state),
+	allItems: selectAllItemsInOneArray(state),
 	itemsInSpecificCategory: selectItemsInSpecificCategory(state)(
 		ownProps.category
 	),

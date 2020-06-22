@@ -1,4 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+const ImgContainerAfterMixin = css`
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 1rem;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+`;
 
 export const CategoryItemContainer = styled.div`
 	flex-basis: 30%;
@@ -9,7 +22,15 @@ export const CategoryItemContainer = styled.div`
 	width: 200px;
 	position: relative;
 
+	button {
+		top: 42%;
+	}
+
 	&:hover {
+		.img-container:after {
+			opacity: 1;
+		}
+
 		button {
 			opacity: 1;
 		}
@@ -29,6 +50,10 @@ export const CategoryItemContainer = styled.div`
 			rgba(227, 227, 227, 1) 0%,
 			rgba(248, 248, 248, 1) 100%
 		);
+
+		&:after {
+			${ImgContainerAfterMixin}
+		}
 
 		img {
 			cursor: pointer;

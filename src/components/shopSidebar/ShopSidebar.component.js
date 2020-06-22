@@ -12,6 +12,7 @@ import {
 	showPricesToggle,
 } from "../../redux/initialData/initialData.actions";
 import { withRouter } from "react-router-dom";
+import SearchInputElement from "../searchInputElement/SearchInputElement.component";
 
 const ShopSidebar = ({
 	categories,
@@ -23,7 +24,7 @@ const ShopSidebar = ({
 }) => {
 	return (
 		<ShopSidebarContainer>
-			<input type="text" placeholder="search Item" />
+			<SearchInputElement />
 
 			<div className="categories-sidebar">
 				<h3 onClick={() => showCategoriesToggle()}>

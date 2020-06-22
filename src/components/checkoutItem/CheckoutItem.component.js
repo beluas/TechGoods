@@ -29,7 +29,7 @@ const CheckoutItem = ({ item, decrement, increment, clearItem }) => {
 						+
 					</span>
 				</li>
-				<li className="price-box">$ {price.toFixed(2)}</li>
+				<li className="price-box">$ {price}</li>
 				<li onClick={() => clearItem(item)} className="remove-icon-box">
 					X
 				</li>

@@ -14,12 +14,8 @@ export const selectItemsInSpecificCategory = createSelector(
 			: null
 );
 
-export const selectAllItemsForShopPage = createSelector(
-	[selectItems],
-	(items) =>
-		items
-			.map((item) => item.items)
-			.reduce((acc, item) => [...acc, ...item], [])
+export const selectAllItemsInOneArray = createSelector([selectItems], (items) =>
+	items.map((item) => item.items).reduce((acc, item) => [...acc, ...item], [])
 );
 
 export const selectCategories = createSelector(

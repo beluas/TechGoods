@@ -10,7 +10,7 @@ export const BreadCrumbContainer = styled.div`
 
 	h1 {
 		font-size: 40px;
-		font-weight: 900;
+		font-weight: 700;
 	}
 	.links {
 		display: flex;
